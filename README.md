@@ -18,7 +18,6 @@ zig build test   # run tests
 
 - `src/main.zig` – executable entry point
 - `src/root.zig` – library root
-- `src/helloworld.zig` – first tutorial exercise
 - `build.zig` / `build.zig.zon` – build script and dependencies
 
 ## Credits
