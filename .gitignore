@@ -2,4 +2,3 @@
 zig-out/
 .idea/
 zig-pkg/
-./src/helloworld.zig

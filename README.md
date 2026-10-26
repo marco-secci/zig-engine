@@ -14,10 +14,13 @@ zig build run    # build and run
 zig build test   # run tests
 ```
 
-## Layout
+Each tutorial step lives in `src/steps/`; for more information about them, see the folder's [README](src/steps/README.md).
+
+## LayoutREADME
 
 - `src/main.zig` – executable entry point
 - `src/root.zig` – library root
+- `src/steps/` – standalone executables, one per tutorial step
 - `build.zig` / `build.zig.zon` – build script and dependencies
 
 ## Credits

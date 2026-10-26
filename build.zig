@@ -28,6 +28,8 @@ pub fn build(b: *std.Build) void {
         .optimize = optimize,
     });
     exe_mod.addImport("engine", engine_mod);
+    exe_mod.addImport("raylib-zig", raylib);
+    exe_mod.linkLibrary(raylib_artifact);
 
     const exe = b.addExecutable(.{
         .name = "zig_engine",
