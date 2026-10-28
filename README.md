@@ -23,6 +23,8 @@ Each tutorial step lives in `src/steps/`; for more information about them, see t
 - `src/steps/` – standalone executables, one per tutorial step
 - `build.zig` / `build.zig.zon` – build script and dependencies
 
+##### TODO: improve repo structure by creating a directory per episode
+
 ## Credits
 
 All credit for the tutorial goes to its original author,
