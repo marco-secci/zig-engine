@@ -8,7 +8,7 @@ on the *Doors to the Unknown* Substack, and building the engine step by step as 
 
 ## Episodes
 
-Each tutorial episode is a self-contained Zig project in `episodes/`:
+Each tutorial episode is a self-contained Zig project in its own folder at the repo root:
 
 | Folder | Episode | Result |
 |---|---|---|
@@ -20,7 +20,7 @@ Each tutorial episode is a self-contained Zig project in `episodes/`:
 From inside an episode's folder:
 
 ```sh
-cd episodes/Episode 2
+cd "Episode 2"
 zig build        # build
 zig build run    # build and run
 zig build test   # run tests
@@ -36,8 +36,6 @@ Each episode folder contains:
 
 To start a new episode, copy the latest episode folder, rename it, change `.name`
 in `build.zig.zon`, and delete the `.fingerprint` line (`zig build` will suggest a new one).
-
-##### TODO: improve repo structure by creating a directory per episode
 
 ## Credits
 
