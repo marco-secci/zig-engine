@@ -6,22 +6,36 @@ This is a learning project: I am following the tutorial series
 [*Costruire videogiochi da zero*](https://doorstotheunknown.substack.com/p/costruire-videogiochi-da-zero-0)
 on the *Doors to the Unknown* Substack, and building the engine step by step as I go.
 
+## Episodes
+
+Each tutorial episode is a self-contained Zig project in `episodes/`:
+
+| Folder | Episode | Result |
+|---|---|---|
+| `Episode 1` | 1 | An empty window (black, then pink by the end of the episode) |
+| `Episode 2` | 2 | A blue rectangle moving across a black window |
+
 ## Build and run
 
+From inside an episode's folder:
+
 ```sh
+cd episodes/Episode 2
 zig build        # build
 zig build run    # build and run
 zig build test   # run tests
 ```
 
-Each tutorial step lives in `src/steps/`; for more information about them, see the folder's [README](src/steps/README.md).
+## Layout
 
-## LayoutREADME
+Each episode folder contains:
 
 - `src/main.zig` – executable entry point
-- `src/root.zig` – library root
-- `src/steps/` – standalone executables, one per tutorial step
-- `build.zig` / `build.zig.zon` – build script and dependencies
+- `src/root.zig` – engine library root
+- `build.zig` / `build.zig.zon` – build script and dependencies (raylib-zig)
+
+To start a new episode, copy the latest episode folder, rename it, change `.name`
+in `build.zig.zon`, and delete the `.fingerprint` line (`zig build` will suggest a new one).
 
 ##### TODO: improve repo structure by creating a directory per episode
 

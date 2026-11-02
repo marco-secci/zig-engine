@@ -32,7 +32,7 @@ pub fn build(b: *std.Build) void {
     exe_mod.linkLibrary(raylib_artifact);
 
     const exe = b.addExecutable(.{
-        .name = "zig_engine",
+        .name = "Episode 2",
         .root_module = exe_mod,
     });
     b.installArtifact(exe);
